@@ -34,3 +34,8 @@ Function names should describe what they do (e.g., calculate_total_price). Clear
 ## 05. Error Handling with Try/Except
 
 Wrap risky operations in try blocks and handle specific exceptions. This prevents crashes and provides graceful fallback behavior.
+
+
+## 06. Prefer List Comprehensions
+
+List comprehensions produce concise, readable transformations of iterables, often faster than equivalent for-loops.
