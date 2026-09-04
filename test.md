@@ -84,3 +84,8 @@ Use async functions for I/O‑bound tasks and await only on awaitable objects. N
 ## 05. SQL Injection Prevention
 
 Always use parameterized queries or prepared statements instead of string concatenation to protect databases from injection attacks.
+
+
+## 06. DRY Principle
+
+'Don't Repeat Yourself' encourages extracting repeated logic into functions or modules, reducing bugs and simplifying updates.
