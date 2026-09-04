@@ -44,3 +44,8 @@ List comprehensions produce concise, readable transformations of iterables, ofte
 ## 07. DRY Principle (Don't Repeat Yourself)
 
 Extract repeated code into reusable functions or classes. This reduces maintenance effort and minimizes bugs.
+
+
+## 08. Version Control Commits
+
+Write atomic, descriptive commit messages. Each commit should represent a single logical change for easier tracking.
