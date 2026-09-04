@@ -89,3 +89,8 @@ Always use parameterized queries or prepared statements instead of string concat
 ## 06. DRY Principle
 
 'Don't Repeat Yourself' encourages extracting repeated logic into functions or modules, reducing bugs and simplifying updates.
+
+
+## 07. Understanding Closures
+
+A closure captures variables from its surrounding lexical scope, allowing inner functions to retain access to those variables even after the outer function finishes.
