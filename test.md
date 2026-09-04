@@ -104,3 +104,8 @@ Always pair malloc with free, and set freed pointers to NULL to avoid dangling r
 ## 09. Version Control Best Practices
 
 Commit early and often with clear messages, use feature branches, and regularly pull/rebase to keep the main branch stable.
+
+
+## 10. Testing Edge Cases
+
+When writing tests, include boundary values, empty inputs, and invalid data to ensure your code handles all possible scenarios robustly.
