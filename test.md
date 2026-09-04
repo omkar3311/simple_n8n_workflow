@@ -79,3 +79,8 @@ Replace hard‑coded numbers with named constants to improve readability and mai
 ## 04. Proper Use of Async/Await
 
 Use async functions for I/O‑bound tasks and await only on awaitable objects. Never block the event loop with synchronous code inside async functions.
+
+
+## 05. SQL Injection Prevention
+
+Always use parameterized queries or prepared statements instead of string concatenation to protect databases from injection attacks.
