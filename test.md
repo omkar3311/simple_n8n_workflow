@@ -54,3 +54,8 @@ Write atomic, descriptive commit messages. Each commit should represent a single
 ## 09. Testing Edge Cases
 
 Include tests for empty inputs, large data, and invalid values. Edge case coverage ensures robust, reliable code.
+
+
+## 10. Readability Over Cleverness
+
+Write code that's easy to understand rather than overly clever tricks. Future maintainers (including you) will appreciate clarity.
