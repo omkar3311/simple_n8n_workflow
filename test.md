@@ -24,3 +24,8 @@ Immutable objects (e.g., strings, tuples) cannot be changed after creation, redu
 ## 03. Avoiding Magic Numbers
 
 Replace raw numeric literals with named constants. This improves readability and makes future adjustments easier.
+
+
+## 04. Use Meaningful Function Names
+
+Function names should describe what they do (e.g., calculate_total_price). Clear names act as documentation and reduce the need for comments.
