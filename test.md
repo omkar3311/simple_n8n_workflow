@@ -64,3 +64,8 @@ Write code that's easy to understand rather than overly clever tricks. Future ma
 ## 01. Understanding Variable Scope
 
 Local variables exist only within the block they are defined, while global variables are accessible throughout the program. Use the appropriate scope to avoid unintended side effects.
+
+
+## 02. Immutable vs Mutable Types
+
+Immutable objects (e.g., strings, tuples) cannot be changed after creation, whereas mutable objects (e.g., lists, dicts) can be modified in place. Choose based on whether you need to preserve original data.
