@@ -39,3 +39,8 @@ Wrap risky operations in try blocks and handle specific exceptions. This prevent
 ## 06. Prefer List Comprehensions
 
 List comprehensions produce concise, readable transformations of iterables, often faster than equivalent for-loops.
+
+
+## 07. DRY Principle (Don't Repeat Yourself)
+
+Extract repeated code into reusable functions or classes. This reduces maintenance effort and minimizes bugs.
