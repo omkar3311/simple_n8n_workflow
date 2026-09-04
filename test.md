@@ -29,3 +29,8 @@ Replace raw numeric literals with named constants. This improves readability and
 ## 04. Use Meaningful Function Names
 
 Function names should describe what they do (e.g., calculate_total_price). Clear names act as documentation and reduce the need for comments.
+
+
+## 05. Error Handling with Try/Except
+
+Wrap risky operations in try blocks and handle specific exceptions. This prevents crashes and provides graceful fallback behavior.
