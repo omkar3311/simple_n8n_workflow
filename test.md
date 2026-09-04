@@ -99,3 +99,8 @@ A closure captures variables from its surrounding lexical scope, allowing inner 
 ## 08. Memory Management in C
 
 Always pair malloc with free, and set freed pointers to NULL to avoid dangling references and memory leaks.
+
+
+## 09. Version Control Best Practices
+
+Commit early and often with clear messages, use feature branches, and regularly pull/rebase to keep the main branch stable.
