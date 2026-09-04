@@ -109,3 +109,8 @@ Commit early and often with clear messages, use feature branches, and regularly 
 ## 10. Testing Edge Cases
 
 When writing tests, include boundary values, empty inputs, and invalid data to ensure your code handles all possible scenarios robustly.
+
+
+## 01. Understanding Variable Scope
+
+Local variables exist only within the block they are defined, while global variables are accessible throughout the program. Use proper scope to avoid unintended side effects.
