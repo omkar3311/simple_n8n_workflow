@@ -49,3 +49,8 @@ Extract repeated code into reusable functions or classes. This reduces maintenan
 ## 08. Version Control Commits
 
 Write atomic, descriptive commit messages. Each commit should represent a single logical change for easier tracking.
+
+
+## 09. Testing Edge Cases
+
+Include tests for empty inputs, large data, and invalid values. Edge case coverage ensures robust, reliable code.
