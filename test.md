@@ -74,3 +74,8 @@ Immutable objects (e.g., strings, tuples) cannot be changed after creation, wher
 ## 03. Avoiding Magic Numbers
 
 Replace hard‑coded numbers with named constants to improve readability and maintainability of your code.
+
+
+## 04. Proper Use of Async/Await
+
+Use async functions for I/O‑bound tasks and await only on awaitable objects. Never block the event loop with synchronous code inside async functions.
