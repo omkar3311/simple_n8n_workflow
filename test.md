@@ -59,3 +59,8 @@ Include tests for empty inputs, large data, and invalid values. Edge case covera
 ## 10. Readability Over Cleverness
 
 Write code that's easy to understand rather than overly clever tricks. Future maintainers (including you) will appreciate clarity.
+
+
+## 01. Understanding Variable Scope
+
+Local variables exist only within the block they are defined, while global variables are accessible throughout the program. Use the appropriate scope to avoid unintended side effects.
