@@ -69,3 +69,8 @@ Local variables exist only within the block they are defined, while global varia
 ## 02. Immutable vs Mutable Types
 
 Immutable objects (e.g., strings, tuples) cannot be changed after creation, whereas mutable objects (e.g., lists, dicts) can be modified in place. Choose based on whether you need to preserve original data.
+
+
+## 03. Avoiding Magic Numbers
+
+Replace hard‑coded numbers with named constants to improve readability and maintainability of your code.
