@@ -94,3 +94,8 @@ Always use parameterized queries or prepared statements instead of string concat
 ## 07. Understanding Closures
 
 A closure captures variables from its surrounding lexical scope, allowing inner functions to retain access to those variables even after the outer function finishes.
+
+
+## 08. Memory Management in C
+
+Always pair malloc with free, and set freed pointers to NULL to avoid dangling references and memory leaks.
