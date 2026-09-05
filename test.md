@@ -144,3 +144,8 @@ Wrap risky operations in try blocks and handle specific exceptions to keep progr
 ## 05. Avoiding Magic Numbers
 
 Replace hard‑coded numbers with named constants for readability and easier maintenance.
+
+
+## 06. Principle of DRY (Don't Repeat Yourself)
+
+Extract repeated logic into functions or classes to reduce duplication and simplify updates.
