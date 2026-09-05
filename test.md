@@ -159,3 +159,8 @@ Use async/await to handle I/O‑bound tasks without blocking the main thread, im
 ## 08. Version Control Best Practices
 
 Commit frequently with clear messages, use branches for features, and review pull requests to maintain code quality.
+
+
+## 09. SQL Injection Prevention
+
+Always use parameterized queries or ORM methods to protect databases from malicious input.
