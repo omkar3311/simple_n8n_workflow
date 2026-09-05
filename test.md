@@ -134,3 +134,8 @@ Know which data structures can be changed after creation (e.g., lists) and which
 ## 03. Using List Comprehensions
 
 Replace loops with concise list comprehensions for clearer, more Pythonic data transformations.
+
+
+## 04. Error Handling with Try/Except
+
+Wrap risky operations in try blocks and handle specific exceptions to keep programs robust.
