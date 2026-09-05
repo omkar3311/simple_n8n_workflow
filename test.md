@@ -139,3 +139,8 @@ Replace loops with concise list comprehensions for clearer, more Pythonic data t
 ## 04. Error Handling with Try/Except
 
 Wrap risky operations in try blocks and handle specific exceptions to keep programs robust.
+
+
+## 05. Avoiding Magic Numbers
+
+Replace hard‑coded numbers with named constants for readability and easier maintenance.
