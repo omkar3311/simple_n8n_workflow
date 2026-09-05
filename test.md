@@ -114,3 +114,8 @@ When writing tests, include boundary values, empty inputs, and invalid data to e
 ## 01. Understanding Variable Scope
 
 Local variables exist only within the block they are defined, while global variables are accessible throughout the program. Use proper scope to avoid unintended side effects.
+
+
+## 01. Understanding Variable Scope
+
+Local variables exist within a function, while global variables are accessible throughout the program. Use 'global' keyword in Python to modify globals inside functions.
