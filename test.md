@@ -149,3 +149,8 @@ Replace hard‑coded numbers with named constants for readability and easier mai
 ## 06. Principle of DRY (Don't Repeat Yourself)
 
 Extract repeated logic into functions or classes to reduce duplication and simplify updates.
+
+
+## 07. Understanding Asynchronous Programming
+
+Use async/await to handle I/O‑bound tasks without blocking the main thread, improving performance.
