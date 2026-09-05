@@ -154,3 +154,8 @@ Extract repeated logic into functions or classes to reduce duplication and simpl
 ## 07. Understanding Asynchronous Programming
 
 Use async/await to handle I/O‑bound tasks without blocking the main thread, improving performance.
+
+
+## 08. Version Control Best Practices
+
+Commit frequently with clear messages, use branches for features, and review pull requests to maintain code quality.
