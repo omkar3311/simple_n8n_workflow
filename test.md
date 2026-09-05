@@ -164,3 +164,8 @@ Commit frequently with clear messages, use branches for features, and review pul
 ## 09. SQL Injection Prevention
 
 Always use parameterized queries or ORM methods to protect databases from malicious input.
+
+
+## 10. Testing with Unit Tests
+
+Write isolated unit tests for functions to catch regressions early and document expected behavior.
