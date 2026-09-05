@@ -129,3 +129,8 @@ Learn the difference between global, local, and block scope to avoid unexpected 
 ## 02. Immutable vs Mutable Types
 
 Know which data structures can be changed after creation (e.g., lists) and which cannot (e.g., tuples) to write safer code.
+
+
+## 03. Using List Comprehensions
+
+Replace loops with concise list comprehensions for clearer, more Pythonic data transformations.
