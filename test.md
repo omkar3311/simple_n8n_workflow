@@ -124,3 +124,8 @@ Local variables exist within a function, while global variables are accessible t
 ## 01. Understanding Variable Scope
 
 Learn the difference between global, local, and block scope to avoid unexpected bugs and manage memory effectively.
+
+
+## 02. Immutable vs Mutable Types
+
+Know which data structures can be changed after creation (e.g., lists) and which cannot (e.g., tuples) to write safer code.
