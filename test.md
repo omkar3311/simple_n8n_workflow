@@ -204,3 +204,8 @@ Combine small, reusable components rather than deep class hierarchies for more f
 ## 07. Limit Function Length
 
 Keep functions under 30 lines; if they grow, extract logical sub‑tasks into helper functions.
+
+
+## 08. Write Unit Tests First
+
+Adopt Test‑Driven Development: write a failing test, implement minimal code, then refactor.
