@@ -214,3 +214,8 @@ Adopt Test‑Driven Development: write a failing test, implement minimal code, t
 ## 09. Handle Errors Gracefully
 
 Use try/catch (or equivalent) to capture exceptions, log useful context, and provide fallback behavior.
+
+
+## 10. Profile Before Optimizing
+
+Measure performance bottlenecks with profiling tools before making premature optimizations.
