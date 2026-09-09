@@ -179,3 +179,8 @@ Use clear, descriptive names and follow language-specific conventions (e.g., cam
 ## 02. Immutable Data Structures
 
 Prefer immutable objects (e.g., const in JavaScript, tuples in Python) to avoid side‑effects and make reasoning about code easier.
+
+
+## 03. Early Return Pattern
+
+Return early from functions to reduce nesting and clarify the main execution path.
