@@ -174,3 +174,8 @@ Write isolated unit tests for functions to catch regressions early and document 
 ## 01. Variable Naming Conventions
 
 Use clear, descriptive names and follow language-specific conventions (e.g., camelCase in JavaScript, snake_case in Python) to improve readability.
+
+
+## 02. Immutable Data Structures
+
+Prefer immutable objects (e.g., const in JavaScript, tuples in Python) to avoid side‑effects and make reasoning about code easier.
