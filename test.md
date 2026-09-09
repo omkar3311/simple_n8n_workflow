@@ -189,3 +189,8 @@ Return early from functions to reduce nesting and clarify the main execution pat
 ## 04. Avoid Magic Numbers
 
 Replace unexplained literals with named constants or enums to make code self‑documenting.
+
+
+## 05. Use Meaningful Commit Messages
+
+Write concise, imperative messages (e.g., "Fix null pointer crash in login flow") to aid future debugging.
