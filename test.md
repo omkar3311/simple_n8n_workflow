@@ -194,3 +194,8 @@ Replace unexplained literals with named constants or enums to make code self‑d
 ## 05. Use Meaningful Commit Messages
 
 Write concise, imperative messages (e.g., "Fix null pointer crash in login flow") to aid future debugging.
+
+
+## 06. Prefer Composition Over Inheritance
+
+Combine small, reusable components rather than deep class hierarchies for more flexible designs.
