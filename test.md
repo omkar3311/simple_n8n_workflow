@@ -209,3 +209,8 @@ Keep functions under 30 lines; if they grow, extract logical sub‑tasks into he
 ## 08. Write Unit Tests First
 
 Adopt Test‑Driven Development: write a failing test, implement minimal code, then refactor.
+
+
+## 09. Handle Errors Gracefully
+
+Use try/catch (or equivalent) to capture exceptions, log useful context, and provide fallback behavior.
