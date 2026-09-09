@@ -184,3 +184,8 @@ Prefer immutable objects (e.g., const in JavaScript, tuples in Python) to avoid 
 ## 03. Early Return Pattern
 
 Return early from functions to reduce nesting and clarify the main execution path.
+
+
+## 04. Avoid Magic Numbers
+
+Replace unexplained literals with named constants or enums to make code self‑documenting.
