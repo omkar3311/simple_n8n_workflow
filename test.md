@@ -199,3 +199,8 @@ Write concise, imperative messages (e.g., "Fix null pointer crash in login flow"
 ## 06. Prefer Composition Over Inheritance
 
 Combine small, reusable components rather than deep class hierarchies for more flexible designs.
+
+
+## 07. Limit Function Length
+
+Keep functions under 30 lines; if they grow, extract logical sub‑tasks into helper functions.
