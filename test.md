@@ -169,3 +169,8 @@ Always use parameterized queries or ORM methods to protect databases from malici
 ## 10. Testing with Unit Tests
 
 Write isolated unit tests for functions to catch regressions early and document expected behavior.
+
+
+## 01. Variable Naming Conventions
+
+Use clear, descriptive names and follow language-specific conventions (e.g., camelCase in JavaScript, snake_case in Python) to improve readability.
