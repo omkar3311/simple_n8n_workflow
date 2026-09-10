@@ -264,3 +264,8 @@ List comprehensions provide a concise, readable way to create lists from iterabl
 ## 09. Use Version Control Branches
 
 Create feature branches for isolated development; merge back to main after code review to keep the mainline stable.
+
+
+## 10. Write Unit Tests for Edge Cases
+
+Test boundary conditions, null inputs, and error paths to ensure code behaves correctly under unexpected scenarios.
