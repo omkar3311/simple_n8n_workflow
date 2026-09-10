@@ -234,3 +234,8 @@ Immutable types (e.g., tuples, strings) cannot be changed after creation; mutabl
 ## 03. Array Indexing Starts at Zero
 
 In most languages, the first element of an array is accessed with index 0, so the last element is at length‑1.
+
+
+## 04. Use Meaningful Variable Names
+
+Descriptive names improve readability and reduce bugs; avoid single letters except for loop counters or temporary values.
