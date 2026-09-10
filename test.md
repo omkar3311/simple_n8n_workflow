@@ -239,3 +239,8 @@ In most languages, the first element of an array is accessed with index 0, so th
 ## 04. Use Meaningful Variable Names
 
 Descriptive names improve readability and reduce bugs; avoid single letters except for loop counters or temporary values.
+
+
+## 05. Guard Clauses Simplify Logic
+
+Return early when a condition fails to reduce nesting and make the main flow of a function clearer.
