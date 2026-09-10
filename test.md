@@ -219,3 +219,8 @@ Use try/catch (or equivalent) to capture exceptions, log useful context, and pro
 ## 10. Profile Before Optimizing
 
 Measure performance bottlenecks with profiling tools before making premature optimizations.
+
+
+## 01. Variable Scope in Functions
+
+Local variables exist only within the function they are defined, while global variables are accessible throughout the module unless shadowed.
