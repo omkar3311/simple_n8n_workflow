@@ -224,3 +224,8 @@ Measure performance bottlenecks with profiling tools before making premature opt
 ## 01. Variable Scope in Functions
 
 Local variables exist only within the function they are defined, while global variables are accessible throughout the module unless shadowed.
+
+
+## 02. Immutable vs Mutable Types
+
+Immutable types (e.g., tuples, strings) cannot be changed after creation; mutable types (e.g., lists, dicts) can be modified in place.
