@@ -254,3 +254,8 @@ Limit nesting depth (e.g., if/else, loops) to improve maintainability; refactor 
 ## 07. Prefer List Comprehensions
 
 List comprehensions provide a concise, readable way to create lists from iterables, often replacing verbose loops.
+
+
+## 08. Understand Asynchronous Await
+
+`await` pauses a coroutine until the awaited task completes, allowing other tasks to run without blocking the event loop.
