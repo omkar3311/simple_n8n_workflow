@@ -244,3 +244,8 @@ Descriptive names improve readability and reduce bugs; avoid single letters exce
 ## 05. Guard Clauses Simplify Logic
 
 Return early when a condition fails to reduce nesting and make the main flow of a function clearer.
+
+
+## 06. Avoid Deep Nesting
+
+Limit nesting depth (e.g., if/else, loops) to improve maintainability; refactor into helper functions when needed.
