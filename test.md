@@ -229,3 +229,8 @@ Local variables exist only within the function they are defined, while global va
 ## 02. Immutable vs Mutable Types
 
 Immutable types (e.g., tuples, strings) cannot be changed after creation; mutable types (e.g., lists, dicts) can be modified in place.
+
+
+## 03. Array Indexing Starts at Zero
+
+In most languages, the first element of an array is accessed with index 0, so the last element is at length‑1.
