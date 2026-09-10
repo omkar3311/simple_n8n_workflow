@@ -249,3 +249,8 @@ Return early when a condition fails to reduce nesting and make the main flow of 
 ## 06. Avoid Deep Nesting
 
 Limit nesting depth (e.g., if/else, loops) to improve maintainability; refactor into helper functions when needed.
+
+
+## 07. Prefer List Comprehensions
+
+List comprehensions provide a concise, readable way to create lists from iterables, often replacing verbose loops.
