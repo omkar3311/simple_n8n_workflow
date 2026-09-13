@@ -314,3 +314,8 @@ Use flexible grids, media queries, and relative units (em, rem, %) to ensure UI 
 ## 09. Test-Driven Development (TDD) Flow
 
 Write a failing test, implement minimal code to pass, then refactor—repeat to build robust, well‑tested software.
+
+
+## 10. Effective Logging Strategies
+
+Log at appropriate levels (debug, info, warn, error) and include context (e.g., request IDs) for easier troubleshooting.
