@@ -279,3 +279,8 @@ Learn the difference between global, local, and block scope to avoid unexpected 
 ## 02. Immutable Data Structures
 
 Use immutable objects (e.g., const in JavaScript, tuples in Python) to simplify state management and enable safer concurrency.
+
+
+## 03. Avoiding Callback Hell
+
+Replace deeply nested callbacks with Promises or async/await to improve readability and error handling.
