@@ -309,3 +309,8 @@ In languages with manual memory management, regularly run tools like Valgrind or
 ## 08. Responsive Design Principles
 
 Use flexible grids, media queries, and relative units (em, rem, %) to ensure UI works across devices.
+
+
+## 09. Test-Driven Development (TDD) Flow
+
+Write a failing test, implement minimal code to pass, then refactor—repeat to build robust, well‑tested software.
