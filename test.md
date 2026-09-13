@@ -304,3 +304,8 @@ Commit early, write clear messages, and use feature branches to keep code histor
 ## 07. Memory Leak Detection
 
 In languages with manual memory management, regularly run tools like Valgrind or use profiling to spot unreleased resources.
+
+
+## 08. Responsive Design Principles
+
+Use flexible grids, media queries, and relative units (em, rem, %) to ensure UI works across devices.
