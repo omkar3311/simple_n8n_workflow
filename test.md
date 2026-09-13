@@ -269,3 +269,8 @@ Create feature branches for isolated development; merge back to main after code 
 ## 10. Write Unit Tests for Edge Cases
 
 Test boundary conditions, null inputs, and error paths to ensure code behaves correctly under unexpected scenarios.
+
+
+## 01. Understanding Variable Scope
+
+Learn the difference between global, local, and block scope to avoid unexpected bugs and manage memory effectively.
