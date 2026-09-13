@@ -299,3 +299,8 @@ Master O(1), O(log n), O(n), O(n log n), and O(n²) to choose efficient algorith
 ## 06. Version Control Best Practices
 
 Commit early, write clear messages, and use feature branches to keep code history clean and collaborative.
+
+
+## 07. Memory Leak Detection
+
+In languages with manual memory management, regularly run tools like Valgrind or use profiling to spot unreleased resources.
