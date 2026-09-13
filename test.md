@@ -284,3 +284,8 @@ Use immutable objects (e.g., const in JavaScript, tuples in Python) to simplify 
 ## 03. Avoiding Callback Hell
 
 Replace deeply nested callbacks with Promises or async/await to improve readability and error handling.
+
+
+## 04. SQL Injection Prevention
+
+Always use parameterized queries or prepared statements instead of string concatenation to protect databases.
