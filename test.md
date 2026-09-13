@@ -294,3 +294,8 @@ Always use parameterized queries or prepared statements instead of string concat
 ## 05. Complexity Analysis Basics
 
 Master O(1), O(log n), O(n), O(n log n), and O(n²) to choose efficient algorithms for scaling applications.
+
+
+## 06. Version Control Best Practices
+
+Commit early, write clear messages, and use feature branches to keep code history clean and collaborative.
