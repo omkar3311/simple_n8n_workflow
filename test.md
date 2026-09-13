@@ -274,3 +274,8 @@ Test boundary conditions, null inputs, and error paths to ensure code behaves co
 ## 01. Understanding Variable Scope
 
 Learn the difference between global, local, and block scope to avoid unexpected bugs and manage memory effectively.
+
+
+## 02. Immutable Data Structures
+
+Use immutable objects (e.g., const in JavaScript, tuples in Python) to simplify state management and enable safer concurrency.
