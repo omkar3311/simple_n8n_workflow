@@ -379,3 +379,8 @@ Learn the difference between local, global, and block scope to avoid unexpected 
 ## 02. Immutable vs Mutable Types
 
 Immutable objects (e.g., strings, tuples) cannot be changed after creation, while mutable ones (e.g., lists, dicts) can.
+
+
+## 03. Zero-Based Indexing
+
+Most languages start array indices at 0; remember this to prevent off‑by‑one errors.
