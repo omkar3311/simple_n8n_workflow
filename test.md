@@ -354,3 +354,8 @@ Commit often with meaningful messages; it enables tracking changes and collabora
 ## 07. Prefer Immutable Data
 
 Immutable structures reduce side effects and make reasoning about program state easier.
+
+
+## 08. Write Unit Tests
+
+Test small units of code automatically; it catches regressions and documents expected behavior.
