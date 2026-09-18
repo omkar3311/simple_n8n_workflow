@@ -389,3 +389,8 @@ Most languages start array indices at 0; remember this to prevent off‑by‑one
 ## 04. Use Meaningful Names
 
 Choose descriptive variable and function names to make code self‑documenting.
+
+
+## 05. Avoid Deep Nesting
+
+Refactor nested conditionals into separate functions or early returns for clearer logic.
