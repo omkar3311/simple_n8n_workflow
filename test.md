@@ -339,3 +339,8 @@ Replace hard‑coded literals with named constants to clarify their purpose and 
 ## 04. Write Small Functions
 
 Keep functions short and focused on a single task; this enhances testability and maintainability.
+
+
+## 05. Handle Errors Early
+
+Validate inputs and handle exceptions at the point of failure to prevent cascading errors.
