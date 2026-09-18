@@ -359,3 +359,8 @@ Immutable structures reduce side effects and make reasoning about program state 
 ## 08. Write Unit Tests
 
 Test small units of code automatically; it catches regressions and documents expected behavior.
+
+
+## 09. Profile Before Optimizing
+
+Measure performance bottlenecks first; premature optimization can waste time and introduce bugs.
