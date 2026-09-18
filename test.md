@@ -329,3 +329,8 @@ Always declare variables with a clear type; it helps catch bugs early and improv
 ## 02. Consistent Naming
 
 Use descriptive, consistent naming conventions (camelCase, snake_case) to make code self‑explanatory.
+
+
+## 03. Avoid Magic Numbers
+
+Replace hard‑coded literals with named constants to clarify their purpose and simplify updates.
