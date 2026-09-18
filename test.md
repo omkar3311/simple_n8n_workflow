@@ -409,3 +409,8 @@ Create tests alongside features to catch regressions and define expected behavio
 ## 08. Leverage Version Control
 
 Commit frequently with clear messages; use branches for isolated feature development.
+
+
+## 09. Know Your Data Structures
+
+Select the right structure (array, hash map, set, tree) based on access patterns and performance.
