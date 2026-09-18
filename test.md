@@ -334,3 +334,8 @@ Use descriptive, consistent naming conventions (camelCase, snake_case) to make c
 ## 03. Avoid Magic Numbers
 
 Replace hard‑coded literals with named constants to clarify their purpose and simplify updates.
+
+
+## 04. Write Small Functions
+
+Keep functions short and focused on a single task; this enhances testability and maintainability.
