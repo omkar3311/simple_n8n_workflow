@@ -374,3 +374,8 @@ Consult official docs and API references; they often contain best practices and 
 ## 01. Understanding Variable Scope
 
 Learn the difference between local, global, and block scope to avoid unexpected bugs.
+
+
+## 02. Immutable vs Mutable Types
+
+Immutable objects (e.g., strings, tuples) cannot be changed after creation, while mutable ones (e.g., lists, dicts) can.
