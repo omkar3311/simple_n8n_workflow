@@ -319,3 +319,8 @@ Write a failing test, implement minimal code to pass, then refactor—repeat to 
 ## 10. Effective Logging Strategies
 
 Log at appropriate levels (debug, info, warn, error) and include context (e.g., request IDs) for easier troubleshooting.
+
+
+## 01. Variables and Types
+
+Always declare variables with a clear type; it helps catch bugs early and improves code readability.
