@@ -86,10 +86,6 @@ This pattern can be adapted for:
 - repository documentation updates
 - scheduled content generation in GitHub repos
 
-## License
-
-This repository does not currently include a license file. If you plan to reuse or share this workflow publicly, consider adding an appropriate license.
-
 ## Summary
 
 This repository is a compact n8n automation that turns a GitHub repository into a daily learning journal powered by an LLM. It demonstrates how to automate documentation generation and commit updates directly back to a repository.
