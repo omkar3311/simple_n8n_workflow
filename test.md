@@ -369,3 +369,8 @@ Measure performance bottlenecks first; premature optimization can waste time and
 ## 10. Read Documentation
 
 Consult official docs and API references; they often contain best practices and edge‑case handling tips.
+
+
+## 01. Understanding Variable Scope
+
+Learn the difference between local, global, and block scope to avoid unexpected bugs.
