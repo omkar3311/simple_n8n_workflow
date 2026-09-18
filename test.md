@@ -324,3 +324,8 @@ Log at appropriate levels (debug, info, warn, error) and include context (e.g., 
 ## 01. Variables and Types
 
 Always declare variables with a clear type; it helps catch bugs early and improves code readability.
+
+
+## 02. Consistent Naming
+
+Use descriptive, consistent naming conventions (camelCase, snake_case) to make code self‑explanatory.
