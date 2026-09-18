@@ -399,3 +399,8 @@ Refactor nested conditionals into separate functions or early returns for cleare
 ## 06. Error Handling Basics
 
 Wrap risky code in try/except (or try/catch) blocks and handle specific exceptions.
+
+
+## 07. Write Unit Tests Early
+
+Create tests alongside features to catch regressions and define expected behavior.
