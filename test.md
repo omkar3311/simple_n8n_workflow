@@ -349,3 +349,8 @@ Validate inputs and handle exceptions at the point of failure to prevent cascadi
 ## 06. Use Version Control
 
 Commit often with meaningful messages; it enables tracking changes and collaborative development.
+
+
+## 07. Prefer Immutable Data
+
+Immutable structures reduce side effects and make reasoning about program state easier.
