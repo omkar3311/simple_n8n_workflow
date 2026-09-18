@@ -394,3 +394,8 @@ Choose descriptive variable and function names to make code self‑documenting.
 ## 05. Avoid Deep Nesting
 
 Refactor nested conditionals into separate functions or early returns for clearer logic.
+
+
+## 06. Error Handling Basics
+
+Wrap risky code in try/except (or try/catch) blocks and handle specific exceptions.
