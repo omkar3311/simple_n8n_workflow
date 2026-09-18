@@ -384,3 +384,8 @@ Immutable objects (e.g., strings, tuples) cannot be changed after creation, whil
 ## 03. Zero-Based Indexing
 
 Most languages start array indices at 0; remember this to prevent off‑by‑one errors.
+
+
+## 04. Use Meaningful Names
+
+Choose descriptive variable and function names to make code self‑documenting.
