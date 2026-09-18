@@ -414,3 +414,8 @@ Commit frequently with clear messages; use branches for isolated feature develop
 ## 09. Know Your Data Structures
 
 Select the right structure (array, hash map, set, tree) based on access patterns and performance.
+
+
+## 10. Profile Before Optimizing
+
+Use profiling tools to identify bottlenecks; premature optimization can waste time.
