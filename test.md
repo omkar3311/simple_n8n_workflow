@@ -344,3 +344,8 @@ Keep functions short and focused on a single task; this enhances testability and
 ## 05. Handle Errors Early
 
 Validate inputs and handle exceptions at the point of failure to prevent cascading errors.
+
+
+## 06. Use Version Control
+
+Commit often with meaningful messages; it enables tracking changes and collaborative development.
