@@ -1,0 +1,251 @@
+{
+  "name": "daily_commit",
+  "nodes": [
+    {
+      "parameters": {
+        "url": "https://api.github.com/repos/omkar3311/simple_n8n_workflow/contents/test.md",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "githubApi",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Accept",
+              "value": "application/vnd.github+json"
+            },
+            {
+              "name": "X-GitHub-Api-Version",
+              "value": "2022-11-28"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.5,
+      "position": [
+        656,
+        -144
+      ],
+      "id": "292da0da-f598-4c3a-9201-d42258728f15",
+      "name": "get_github_SHA",
+      "executeOnce": false,
+      "credentials": {
+        "githubApi": {
+          "id": "daqy4A8eRgNumxY5",
+          "name": "GitHub account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const response = $input.first().json;\n\nconst parsed = JSON.parse(\n  response.choices[0].message.content\n);\n\nconst today = $now.setZone('Asia/Kolkata').toFormat('yyyy-MM-dd');\n\nreturn parsed.items.map((item, index) => {\n  const number = String(index + 1).padStart(2, '0');\n\n  const text = `\\n\\n### ${number}. ${item.title}\\n\\n${item.content}`;\n\n  return {\n    json: {\n      number,\n      title: item.title,\n      content: item.content,\n      appendText: text,\n      date: today\n    }\n  };\n});"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        176,
+        0
+      ],
+      "id": "fb633f68-3324-4825-b3d4-f49a83c13164",
+      "name": "10_codes"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.groq.com/openai/v1/chat/completions",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "groqApi",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"model\": \"openai/gpt-oss-120b\",\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You generate useful small daily programming-learning notes.\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"Generate exactly 10 different short programming learning notes. Return ONLY valid JSON in this format: {\\\"items\\\":[{\\\"title\\\":\\\"...\\\",\\\"content\\\":\\\"...\\\"}]}.\"\n    }\n  ],\n  \"temperature\": 0.7\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.5,
+      "position": [
+        0,
+        -144
+      ],
+      "id": "224991cd-b234-4f1c-8122-261391dbd6a8",
+      "name": "LLM",
+      "credentials": {
+        "groqApi": {
+          "id": "qEpGDYMM50g5TONL",
+          "name": "Groq account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        400,
+        -16
+      ],
+      "id": "78be28f6-0631-462a-a2bf-39c356499204",
+      "name": "Loop Over Items"
+    },
+    {
+      "parameters": {
+        "method": "PUT",
+        "url": "=https://api.github.com/repos/omkar3311/simple_n8n_workflow/contents/{{$json.filePath}}",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "githubApi",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Accept",
+              "value": "application/vnd.github+json"
+            },
+            {
+              "name": "X-GitHub-Api-Version",
+              "value": "2022-11-28"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{\n  {\n    message: \"Daily learning note #\" + $json.number,\n    content: $json.encodedContent,\n    sha: $json.sha\n  }\n}}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.5,
+      "position": [
+        976,
+        48
+      ],
+      "id": "17f6d1b4-99f5-4390-853f-42c9a0efd1f4",
+      "name": "commit to github",
+      "credentials": {
+        "githubApi": {
+          "id": "daqy4A8eRgNumxY5",
+          "name": "GitHub account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const github = $input.item.json;\n\n// Get the current note from Loop Over Items\nconst note = $('Loop Over Items').item.json;\n\n// GitHub content is Base64\nconst currentContent = Buffer\n  .from(github.content.replace(/\\s/g, ''), 'base64')\n  .toString('utf8');\n\n// Text to append\nconst appendText = `\n\n## ${note.number}. ${note.title}\n\n${note.content}\n`;\n\n// Full new file\nconst updatedContent = currentContent + appendText;\n\n// Encode the ENTIRE updated file as Base64\nconst encodedContent = Buffer\n  .from(updatedContent, 'utf8')\n  .toString('base64');\n\nreturn {\n  json: {\n    number: note.number,\n    title: note.title,\n    sha: github.sha,\n    filePath: github.path,\n    encodedContent: encodedContent\n  }\n};"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        928,
+        -144
+      ],
+      "id": "b5864c73-052b-4f2d-968b-8e9df4fa49f8",
+      "name": "prepare commit",
+      "executeOnce": true
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -224,
+        -144
+      ],
+      "id": "95e084ad-eb9e-41b7-98a0-560332fef447",
+      "name": "When clicking ‘Execute workflow’"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "get_github_SHA": {
+      "main": [
+        [
+          {
+            "node": "prepare commit",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "10_codes": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "LLM": {
+      "main": [
+        [
+          {
+            "node": "10_codes",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items": {
+      "main": [
+        [],
+        [
+          {
+            "node": "get_github_SHA",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "prepare commit": {
+      "main": [
+        [
+          {
+            "node": "commit to github",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "commit to github": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "LLM",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "e2b1a086-e980-485d-9433-b908154640d1",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "d04a13ad3564bbad340fdd5fee1888493f8d696b7a6bea3cb7284de79aecf796"
+  },
+  "nodeGroups": [],
+  "id": "ap1YSeBKJT1U7apy",
+  "tags": []
+}
