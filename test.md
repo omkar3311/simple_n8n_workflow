@@ -404,3 +404,8 @@ Wrap risky code in try/except (or try/catch) blocks and handle specific exceptio
 ## 07. Write Unit Tests Early
 
 Create tests alongside features to catch regressions and define expected behavior.
+
+
+## 08. Leverage Version Control
+
+Commit frequently with clear messages; use branches for isolated feature development.
