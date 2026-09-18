@@ -364,3 +364,8 @@ Test small units of code automatically; it catches regressions and documents exp
 ## 09. Profile Before Optimizing
 
 Measure performance bottlenecks first; premature optimization can waste time and introduce bugs.
+
+
+## 10. Read Documentation
+
+Consult official docs and API references; they often contain best practices and edge‑case handling tips.
