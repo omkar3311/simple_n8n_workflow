@@ -4,7 +4,7 @@ This repository contains an n8n automation that generates a daily programming le
 
 It is designed to help maintain a habit of learning by automatically creating short, useful programming notes and storing them in a Markdown file (`test.md`).
 
-## demo 
+## 🎥 Demo
 
 
 https://github.com/user-attachments/assets/c46c4e30-0e86-40fb-99bf-40c8bc338006
