@@ -424,3 +424,8 @@ Use profiling tools to identify bottlenecks; premature optimization can waste ti
 ## 01. Understanding Variable Scope
 
 Local variables exist only within the block they are defined, while global variables are accessible throughout the program. Use the appropriate scope to avoid unintended side effects.
+
+
+## 02. Immutable vs Mutable Types
+
+Immutable objects (e.g., strings, tuples) cannot be changed after creation, whereas mutable objects (e.g., lists, dictionaries) can. Choose immutability for safer, thread‑friendly code.
