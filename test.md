@@ -489,3 +489,8 @@ Never concatenate user input into SQL strings. Use prepared statements or parame
 ## 04. Async/Await vs. Callbacks
 
 `async/await` makes asynchronous code look synchronous, improving readability. Remember to `try/catch` errors inside async functions.
+
+
+## 05. RESTful API Naming Conventions
+
+Use nouns for resources (`/users`, `/orders`) and HTTP verbs to indicate actions (GET, POST, PUT, DELETE). Keep URLs plural for consistency.
