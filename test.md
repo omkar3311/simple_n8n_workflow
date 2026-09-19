@@ -434,3 +434,8 @@ Immutable objects (e.g., strings, tuples) cannot be changed after creation, wher
 ## 03. Avoiding Magic Numbers
 
 Replace hard‑coded numbers with named constants. This improves readability and makes future adjustments easier.
+
+
+## 04. Use Meaningful Function Names
+
+A function name should describe its purpose and side effects. Clear names reduce the need for extra comments and help others understand the code quickly.
