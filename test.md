@@ -419,3 +419,8 @@ Select the right structure (array, hash map, set, tree) based on access patterns
 ## 10. Profile Before Optimizing
 
 Use profiling tools to identify bottlenecks; premature optimization can waste time.
+
+
+## 01. Understanding Variable Scope
+
+Local variables exist only within the block they are defined, while global variables are accessible throughout the program. Use the appropriate scope to avoid unintended side effects.
