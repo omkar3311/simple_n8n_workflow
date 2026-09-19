@@ -504,3 +504,8 @@ Every `malloc` must have a matching `free`. Use tools like Valgrind to detect le
 ## 07. CSS Box Model Basics
 
 The total width of an element = margin + border + padding + content. `box-sizing: border-box` includes padding and border in the element's width.
+
+
+## 08. Python List Comprehensions
+
+A concise way to create lists: `[x*2 for x in range(5) if x % 2 == 0]` produces `[0, 4, 8]`.
