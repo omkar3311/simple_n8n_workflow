@@ -459,3 +459,8 @@ Returning early from a function when a condition is met reduces nesting and impr
 ## 08. Write Unit Tests First
 
 Adopt Test‑Driven Development (TDD): write a failing test, implement code to pass it, then refactor. This leads to more reliable and maintainable code.
+
+
+## 09. Understand Asynchronous Programming
+
+Async code allows I/O‑bound tasks to run concurrently without blocking. Use `async/await` (or equivalents) to improve responsiveness in network or file operations.
