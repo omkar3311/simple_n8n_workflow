@@ -514,3 +514,8 @@ A concise way to create lists: `[x*2 for x in range(5) if x % 2 == 0]` produces 
 ## 09. Git Branching Strategy
 
 Use `main` for stable releases, `develop` for integration, and feature branches (`feature/xyz`) for isolated work. Merge with pull requests.
+
+
+## 10. Big O Notation Primer
+
+Measure algorithm efficiency: O(1) constant time, O(n) linear, O(log n) logarithmic, O(n²) quadratic. Aim for lower complexity when scaling.
