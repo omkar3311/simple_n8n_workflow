@@ -474,3 +474,8 @@ Provide clear docstrings or comments for functions, classes, and modules that ar
 ## 01. Understanding Variable Scope
 
 Local variables exist only within the function they are defined, while global variables are accessible throughout the program. Use `let`/`const` in JavaScript to avoid accidental globals.
+
+
+## 02. Immutable Data Structures
+
+Immutable objects cannot be changed after creation. In functional programming, use methods like `map`, `filter`, and `reduce` instead of mutating arrays.
