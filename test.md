@@ -439,3 +439,8 @@ Replace hard‑coded numbers with named constants. This improves readability and
 ## 04. Use Meaningful Function Names
 
 A function name should describe its purpose and side effects. Clear names reduce the need for extra comments and help others understand the code quickly.
+
+
+## 05. Prefer List Comprehensions
+
+List comprehensions provide a concise way to create lists and often run faster than equivalent loops. Example: squares = [x*x for x in range(10)].
