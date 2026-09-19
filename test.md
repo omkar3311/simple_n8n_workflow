@@ -444,3 +444,8 @@ A function name should describe its purpose and side effects. Clear names reduce
 ## 05. Prefer List Comprehensions
 
 List comprehensions provide a concise way to create lists and often run faster than equivalent loops. Example: squares = [x*x for x in range(10)].
+
+
+## 06. Handle Exceptions Wisely
+
+Catch specific exceptions instead of a blanket `except`. This prevents masking bugs and makes error handling clearer.
