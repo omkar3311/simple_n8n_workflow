@@ -484,3 +484,8 @@ Immutable objects cannot be changed after creation. In functional programming, u
 ## 03. SQL Injection Prevention
 
 Never concatenate user input into SQL strings. Use prepared statements or parameterized queries to keep data and code separate.
+
+
+## 04. Async/Await vs. Callbacks
+
+`async/await` makes asynchronous code look synchronous, improving readability. Remember to `try/catch` errors inside async functions.
