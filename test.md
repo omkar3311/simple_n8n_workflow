@@ -479,3 +479,8 @@ Local variables exist only within the function they are defined, while global va
 ## 02. Immutable Data Structures
 
 Immutable objects cannot be changed after creation. In functional programming, use methods like `map`, `filter`, and `reduce` instead of mutating arrays.
+
+
+## 03. SQL Injection Prevention
+
+Never concatenate user input into SQL strings. Use prepared statements or parameterized queries to keep data and code separate.
