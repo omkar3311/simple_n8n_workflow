@@ -449,3 +449,8 @@ List comprehensions provide a concise way to create lists and often run faster t
 ## 06. Handle Exceptions Wisely
 
 Catch specific exceptions instead of a blanket `except`. This prevents masking bugs and makes error handling clearer.
+
+
+## 07. Leverage Early Returns
+
+Returning early from a function when a condition is met reduces nesting and improves readability.
