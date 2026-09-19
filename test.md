@@ -429,3 +429,8 @@ Local variables exist only within the block they are defined, while global varia
 ## 02. Immutable vs Mutable Types
 
 Immutable objects (e.g., strings, tuples) cannot be changed after creation, whereas mutable objects (e.g., lists, dictionaries) can. Choose immutability for safer, thread‑friendly code.
+
+
+## 03. Avoiding Magic Numbers
+
+Replace hard‑coded numbers with named constants. This improves readability and makes future adjustments easier.
