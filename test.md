@@ -464,3 +464,8 @@ Adopt Test‑Driven Development (TDD): write a failing test, implement code to p
 ## 09. Understand Asynchronous Programming
 
 Async code allows I/O‑bound tasks to run concurrently without blocking. Use `async/await` (or equivalents) to improve responsiveness in network or file operations.
+
+
+## 10. Document Public APIs
+
+Provide clear docstrings or comments for functions, classes, and modules that are part of your library's public interface. Good documentation speeds up onboarding and reduces misuse.
