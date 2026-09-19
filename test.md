@@ -454,3 +454,8 @@ Catch specific exceptions instead of a blanket `except`. This prevents masking b
 ## 07. Leverage Early Returns
 
 Returning early from a function when a condition is met reduces nesting and improves readability.
+
+
+## 08. Write Unit Tests First
+
+Adopt Test‑Driven Development (TDD): write a failing test, implement code to pass it, then refactor. This leads to more reliable and maintainable code.
