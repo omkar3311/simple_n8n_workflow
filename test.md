@@ -469,3 +469,8 @@ Async code allows I/O‑bound tasks to run concurrently without blocking. Use `a
 ## 10. Document Public APIs
 
 Provide clear docstrings or comments for functions, classes, and modules that are part of your library's public interface. Good documentation speeds up onboarding and reduces misuse.
+
+
+## 01. Understanding Variable Scope
+
+Local variables exist only within the function they are defined, while global variables are accessible throughout the program. Use `let`/`const` in JavaScript to avoid accidental globals.
