@@ -499,3 +499,8 @@ Use nouns for resources (`/users`, `/orders`) and HTTP verbs to indicate actions
 ## 06. Memory Management in C
 
 Every `malloc` must have a matching `free`. Use tools like Valgrind to detect leaks and double frees.
+
+
+## 07. CSS Box Model Basics
+
+The total width of an element = margin + border + padding + content. `box-sizing: border-box` includes padding and border in the element's width.
