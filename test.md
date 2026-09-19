@@ -494,3 +494,8 @@ Never concatenate user input into SQL strings. Use prepared statements or parame
 ## 05. RESTful API Naming Conventions
 
 Use nouns for resources (`/users`, `/orders`) and HTTP verbs to indicate actions (GET, POST, PUT, DELETE). Keep URLs plural for consistency.
+
+
+## 06. Memory Management in C
+
+Every `malloc` must have a matching `free`. Use tools like Valgrind to detect leaks and double frees.
